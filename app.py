@@ -15,7 +15,7 @@ def home():
 def tasks():
     return appService.get_tasks()
 
-@app.route('/api/task', methods=['GET','POST'])
+@app.route('/api/task', methods=['GET','POST','Delete'])
 def create_task():
     request_data = request.get_json()
     task = request_data['task']
